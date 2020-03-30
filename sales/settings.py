@@ -35,11 +35,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#b1-&z=#s_i565=&!*ab&b8p&cwx6llm65+497v7=60ew$7iru'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.wilpalinternationalogistics.com','wilpalinternationalogistics.com','localhost:8000']
 
-
+SECURE_HSTS_SECONDS = 3600
+SECURE_SSL_REDIRECT =True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+# SECURE_REFERRER_POLICY =
 # Application definition
 
 INSTALLED_APPS = [
@@ -130,7 +136,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
