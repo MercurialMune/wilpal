@@ -3,14 +3,17 @@ cachetools==4.0.0
 certifi==2019.11.28
 chardet==3.0.4
 confusable-homoglyphs==3.2.0
+dj-database-url==0.5.0
 dj-static==0.0.6
 Django==3.0.4
 django-bootstrap3==12.0.3
+django-heroku==0.3.1
 django-registration==3.1
 google-api-python-client==1.7.11
 google-auth==1.11.2
 google-auth-httplib2==0.0.3
 google-auth-oauthlib==0.4.1
+gunicorn==20.0.4
 httplib2==0.17.0
 idna==2.9
 oauthlib==3.1.0
@@ -30,3 +33,4 @@ sqlparse==0.3.1
 static3==0.7.0
 uritemplate==3.0.1
 urllib3==1.25.8
+whitenoise==5.0.1
