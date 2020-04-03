@@ -144,18 +144,18 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
-# SENDGRID_API_KEY = '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'
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.sendgrid.net'
-# EMAIL_HOST_USER = 'apikey'
-# EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
-# EMAIL_PORT = 587
-# SERVER_EMAIL = 'kenmaina2022@gmail.com'
-
+SENDGRID_API_KEY = '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'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'kenmaina2022@gmail.com'
-EMAIL_HOST_PASSWORD = 'omofgepjzgchjuev'
+SERVER_EMAIL = 'info@wilpalinternationalogistics.com'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'kenmaina2022@gmail.com'
+# EMAIL_HOST_PASSWORD = 'omofgepjzgchjuev'
