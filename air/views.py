@@ -34,7 +34,7 @@ def contact(request):
                 'Sales Cargo',
                 form_content,
                 contact_email,
-                ['info@wilpalinternationalogistics.com', 'paul@wilpalinternationalogistics.com'],
+                ['info@wilpalinternationallogistics.com', 'paul@wilpalinternationallogistics.com'],
                 fail_silently=True,
             )
             messages.success( request, 'The email has been sent successfully.' )
